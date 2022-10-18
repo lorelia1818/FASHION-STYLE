@@ -9,4 +9,8 @@ app.set('port', process.env.PORT || 4000);
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
+//routes
+app.use(require('./routes/orderproduct.route'))
+app.use(require('./routes/orders.route'))
+
 module.exports = app
