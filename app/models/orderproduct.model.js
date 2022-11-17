@@ -23,7 +23,7 @@ var Models = {
         }
     },
 
-    addSOrdersProducts: (data, callback) => {
+    addOrdersProducts: (data, callback) => {
 
         if(connection) {
             let sql = `insert into order_products (order_product_amount) values (

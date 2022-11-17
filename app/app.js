@@ -12,5 +12,8 @@ app.use(express.json());
 //routes
 app.use(require('./routes/orderproduct.route'))
 app.use(require('./routes/orders.route'))
+app.use(require('./routes/product.route'))
+app.use(require('./routes/pymentmethod.route'))
+app.use(require('./routes/user.route'))
 
 module.exports = app
